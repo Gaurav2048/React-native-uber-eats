@@ -25,10 +25,13 @@ const navStack = createStackNavigator({
         }
     }, 
     Home: {
-       screen: Home
+       screen: Home,
+       navigationOptions:{
+        header: null
+     }
     }
 }, {
-    initialRouteName:"Splash"
+    initialRouteName:"Home"
 }); 
 
 export default createAppContainer(navStack); 
